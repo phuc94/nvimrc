@@ -53,5 +53,8 @@ return require('packer').startup(function(use)
 
   use 'tpope/vim-commentary'
 
+  use 'akinsho/toggleterm.nvim'
+
+  use 'mhinz/vim-signify'
 
 end)

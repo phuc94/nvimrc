@@ -4,13 +4,14 @@ vim.keymap.set("n", "<leader>q", ":q<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>w", ":w<CR>", {noremap = true})
 
 -- nvim-tree
-vim.keymap.set("n", "<C-e>", ":NvimTreeFocus<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>ee", ":NvimTreeFocus<CR>", {noremap = true})
+vim.keymap.set("n", "<leader>ec", ":NvimTreeClose<CR>", {noremap = true})
 
 -- buffer & bufferline
 vim.keymap.set("n", "<C-l>", ":bnext<CR>", {noremap=true})
 vim.keymap.set("n", "<C-h>", ":bprev<CR>", {noremap=true})
 vim.keymap.set("n", "<A-k>w", ":%bd|e#|bd#<CR>", {noremap=true})
-vim.keymap.set("n", "<leader>x", ":bd<CR>:bprev<CR>", {noremap=true})
+vim.keymap.set("n", "<leader>c", ":bd<CR>:bprev<CR>", {noremap=true})
 
 -- Centralize after go definition
 vim.keymap.set("n", "gd", "gdzz", {noremap=true})
@@ -45,4 +46,4 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set('v', '<C-S-f>', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', {noremap=true})
 vim.keymap.set('v', '<C-f>', 'y/<c-r>0<CR>')
 -- fugitive
-vim.keymap.set('n', '<leader>gg', ':G<CR>')
+vim.keymap.set('n', '<leader>gg', ':0G<CR>:NvimTreeClose<CR>')
