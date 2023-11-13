@@ -10,7 +10,7 @@ vim.keymap.set("n", "<C-e>", ":NvimTreeFocus<CR>", {noremap = true})
 vim.keymap.set("n", "<C-l>", ":bnext<CR>", {noremap=true})
 vim.keymap.set("n", "<C-h>", ":bprev<CR>", {noremap=true})
 vim.keymap.set("n", "<A-k>w", ":%bd|e#|bd#<CR>", {noremap=true})
-vim.keymap.set("n", "<leader>c", ":bd<CR>:bprev<CR>", {noremap=true})
+vim.keymap.set("n", "<leader>x", ":bd<CR>:bprev<CR>", {noremap=true})
 
 -- Centralize after go definition
 vim.keymap.set("n", "gd", "gdzz", {noremap=true})
@@ -25,6 +25,9 @@ vim.keymap.set("n", "gd", "gdzz", {noremap=true})
 
 -- vim options
 vim.opt.relativenumber = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.expandtab = true
 
 -- Primeagen remap
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
@@ -36,5 +39,8 @@ vim.keymap.set("n", "N", "Nzz")
 vim.keymap.set("x", "p", "\"_dP")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
-
-vim.keymap.set('v', '<C-f>', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', {noremap=true})
+-- Personal remap
+vim.keymap.set('v', '<C-S-f>', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', {noremap=true})
+vim.keymap.set('v', '<C-f>', 'y/<c-r>0<CR>')
+-- fugitive
+vim.keymap.set('n', '<leader>g', ':G<CR>')
