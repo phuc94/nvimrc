@@ -21,17 +21,17 @@ return require('packer').startup(function(use)
   use "nvim-lua/plenary.nvim"
 
   use {
-	  "nvim-telescope/telescope-file-browser.nvim",
-	  requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
-  
+
 
   use {
-	  'nvim-tree/nvim-tree.lua',
-	  requires = {
-		  'nvim-tree/nvim-web-devicons', -- optional
-	  },
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional
+    },
   }
 
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
@@ -39,9 +39,9 @@ return require('packer').startup(function(use)
   use 'tpope/vim-fugitive'
 
   use {
-	  'williamboman/mason.nvim',
-	  'williamboman/mason-lspconfig.nvim',
-	  'neovim/nvim-lspconfig',
+    'williamboman/mason.nvim',
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
