@@ -28,6 +28,7 @@ vim.opt.relativenumber = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+vim.opt.cursorline = true
 
 -- Primeagen remap
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
