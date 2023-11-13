@@ -44,4 +44,4 @@ vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set('v', '<C-S-f>', 'y<ESC>:Telescope live_grep default_text=<c-r>0<CR>', {noremap=true})
 vim.keymap.set('v', '<C-f>', 'y/<c-r>0<CR>')
 -- fugitive
-vim.keymap.set('n', '<leader>g', ':G<CR>')
+vim.keymap.set('n', '<leader>gg', ':G<CR>')
