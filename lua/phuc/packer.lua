@@ -57,4 +57,6 @@ return require('packer').startup(function(use)
 
   use 'mhinz/vim-signify'
 
+  use 'ThePrimeagen/harpoon'
+
 end)
