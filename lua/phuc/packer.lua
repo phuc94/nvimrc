@@ -59,4 +59,8 @@ return require('packer').startup(function(use)
 
   use 'ThePrimeagen/harpoon'
 
+  use 'folke/trouble.nvim'
+
+  use 'lukas-reineke/indent-blankline.nvim'
+
 end)
