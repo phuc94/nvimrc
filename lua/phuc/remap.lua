@@ -1,6 +1,5 @@
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>h", ":nohl<CR>", {noremap = true})
-vim.keymap.set("n", "<leader>q", ":q<CR>", {noremap = true})
 vim.keymap.set("n", "<leader>w", ":w<CR>", {noremap = true})
 
 -- nvim-tree
@@ -11,8 +10,12 @@ vim.keymap.set("n", "<leader>ex", ":NvimTreeClose<CR>", {noremap = true})
 -- buffer & bufferline
 vim.keymap.set("n", "<C-l>", ":bnext<CR>", {noremap=true})
 vim.keymap.set("n", "<C-h>", ":bprev<CR>", {noremap=true})
-vim.keymap.set("n", "<A-k>w", ":%bd|e#|bd#<CR>", {noremap=true})
-vim.keymap.set("n", "<leader>x", ":bd<CR>:bprev<CR>")
+vim.keymap.set("n", "<leader>bw", ":%bd|e#|bd#<CR>", {noremap=true})
+vim.keymap.set("n", "<leader>bx", ":bd<CR>:bprev<CR>")
+vim.keymap.set("n", "<leader>bv", ":vsplit<CR>")
+-- buffer & bufferline
+vim.keymap.set("n", "<leader>wl", "<C-w>l")
+vim.keymap.set("n", "<leader>wh", "<C-w>h")
 
 -- Centralize after go definition
 vim.keymap.set("n", "gd", "gdzz", {noremap=true})
