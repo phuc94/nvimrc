@@ -17,11 +17,14 @@ vim.cmd[[colorscheme kanagawa]]
 -- Git Diff highlight
 vim.cmd[[highlight DiffAdd cterm=reverse ctermfg=2 gui=reverse guifg=#a3be8c guibg=#2e3440]]
 vim.cmd[[highlight diffAdded cterm=reverse ctermfg=2 gui=reverse guifg=#a3be8c guibg=#2e3440]]
+
 vim.cmd[[highlight DiffChange cterm=reverse ctermfg=3 gui=reverse guifg=#ebcb8b guibg=#2e3440]]
+vim.cmd[[highlight diffChanged cterm=reverse ctermfg=3 gui=reverse guifg=#ffffff guibg=#ffffff]]
 vim.cmd[[highlight TelescopeResultsDiffChange cterm=reverse ctermfg=3 gui=reverse guifg=#ebcb8b guibg=#2e3440]]
+
 vim.cmd[[highlight DiffDelete cterm=reverse ctermfg=1 gui=reverse guifg=#bf616a guibg=#2e3440]]
 vim.cmd[[highlight diffRemoved cterm=reverse ctermfg=1 gui=reverse guifg=#bf616a guibg=#2e3440]]
--- vim.cmd[[highlight TelescopeResultsDiffAdd cterm=reverse ctermfg=2 gui=reverse guifg=#a3be8c guibg=#2e3440]]
--- vim.cmd[[highlight TelescopeResultsDiffDelete cterm=reverse ctermfg=1 gui=reverse guifg=#bf616a guibg=#2e3440]]
--- vim.cmd[[highlight DiffText cterm=reverse ctermfg=4 gui=reverse guifg=#81a1c1 guibg=#2e3440]]
+vim.cmd[[highlight diffDeleted cterm=reverse ctermfg=1 gui=reverse guifg=#ffffff guibg=#ffffff]]
+
+vim.cmd[[highlight DiffText cterm=reverse ctermfg=4 gui=reverse guifg=#81a1c1 guibg=#2e3440]]
 
