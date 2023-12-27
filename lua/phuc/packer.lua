@@ -37,6 +37,7 @@ return require('packer').startup(function(use)
   use {'akinsho/bufferline.nvim', tag = "*", requires = 'nvim-tree/nvim-web-devicons'}
 
   use 'tpope/vim-fugitive'
+  use 'junegunn/gv.vim'
 
   use {
     'williamboman/mason.nvim',
