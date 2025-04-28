@@ -1,9 +1,13 @@
 require('mason').setup()
 require('mason-lspconfig').setup({
-	ensure_installed = { 'tsserver', 'gopls', 'lua_ls' }
+	ensure_installed = {
+    'ts_ls',
+--    'gopls',
+    'lua_ls'
+  }
 })
 
-require'lspconfig'.tsserver.setup{}
+require'lspconfig'.ts_ls.setup{}
 require'lspconfig'.gopls.setup{}
 require'lspconfig'.lua_ls.setup{}
 
@@ -12,7 +16,7 @@ require'lspconfig'.lua_ls.setup{}
 local lspconfig = require('lspconfig')
 lspconfig.gopls.setup {}
 lspconfig.pyright.setup {}
-lspconfig.tsserver.setup {}
+lspconfig.ts_ls.setup {}
 lspconfig.rust_analyzer.setup {
 	-- Server-specific settings. See `:help lspconfig-setup`
 	settings = {
